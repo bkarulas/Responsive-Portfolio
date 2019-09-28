@@ -1,10 +1,11 @@
+/*Body of the site that inclueds the background image*/
 body{
 	background-image: url("../images/background.png");
 	margin: auto;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #777777;
 }
-
+/*Header is includes My name and the Nav bar*/
 header{
 	background-color: #ffffff;
 	padding: 56px;
@@ -12,18 +13,18 @@ header{
 	border-width: 2px;
 	border-color: #cccccc;
 }
-
+/*Box around just he name and nav*/
 .title{
 	width: 960px;
 	margin:auto;
 }
-
+/*All headers are be of the same font family*/
 h1, h2, h3, h4, h5, h6{
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 
-
+/*My name at the top of the screen*/
 .name {
 	float: left;
 	width: 225px;
@@ -32,7 +33,7 @@ h1, h2, h3, h4, h5, h6{
 	background-color: #4aaaa5;
 	color: #ffffff;	
 }
-
+/* Link setting*/
 a{
 	text-decoration: none;
 	color: #777777;
@@ -54,7 +55,7 @@ a:visited
 }
 
 
-
+/*Nav bar at the top of the screen*/
 nav{
 	float: right;
 	width: 400px;
@@ -62,6 +63,7 @@ nav{
 	margin:0;
 }
 
+/*The real body of each page, everything after the Header*/
 .content{
 	max-width: 926px;
 	background-color: #ffffff;
@@ -73,10 +75,12 @@ nav{
 	border-color: #dddddd;
 }
 
+/*title of the page you are on*/
 .page{
 	color: #4aaaa5;
 }
 
+/* Horizontal Line*/
 hr {
 	display: block;
 	margin-top: 0.5em;
@@ -88,15 +92,18 @@ hr {
 	border-color: #dadada;
 }
 
+/* My pictue on the index page*/
 #selfpic{
 	float: left;
     padding-right: 15px;
 }
 
+/*All paragraph settings*/
 p{
 	line-height: 1.5em
 }
 
+/*The stickey footer at the bottom of each screen*/
 footer{
 	color: #cccccc;
 	background-color: #666666;
@@ -111,12 +118,14 @@ footer{
 	width: 100%;
 }
 
+/*1 line of text input on the contact page*/
 .box{
 	width: 100%;
 	outline-color: #dddddd;
 	margin-bottom: 20px;
 }
 
+/*multiple line of input on the contact page*/
 #message{
 	width: 100%;
 	height: 200px;
@@ -124,6 +133,7 @@ footer{
 	margin-bottom: 20px;
 }
 
+/*submit button*/
 button{
 	width: 100px;
 	padding:10px;
@@ -133,15 +143,18 @@ button{
 	color: #ffffff;
 }
 
+/*the images on the Portfolio page*/
 .portimg{
 	padding: 20px;
 }
 
+/*the overlay of the image for the text on the portfolio page*/
 .container {
 	position: absolute;
 	text-align: center;
 }
 
+/*the text over the images on the left side of the page  on the Portfolio page*/
 .textleft{
 	padding: 10px 0 10px 0;
 	margin-left: 20px;
@@ -153,7 +166,7 @@ button{
 	width: 300px;
 	top: -90px
 }
-
+/*the text over the images on the right side of the page  on the Portfolio page*/
 .textright{
 	padding: 10px 0 10px 0;
 	margin-left: 20px;
@@ -167,18 +180,60 @@ button{
 	top: -90px
 }
 
+/*Media settings for desktop screen*/
 @media screen and (max-width: 980px){
-	.name{
+	body{
+		max-width:980px;
+	}
 
+	.title {
+		width: 980px;
+	}
+
+	.content{
+		max-width: 900px;
+		margin-bottom: 100px;
+		padding-bottom: 20px;
+	}
+
+	nav{
+		float: left;
+	}
+}
+
+/*media setting for tablets*/
+@media screen and (max-width: 768px){
+
+	body{
+		max-width:768px;
+	}
+
+	.title {
+		width: 768px;
+	}
+
+	.content{
+		max-width: 700px;
+		margin-bottom: 100px;
+		padding-bottom: 20px;
+	}
+
+	nav{
+		float: left;
+	}
+
+	#selfpic{
+		float: left;
+		padding-right: 15px;
+		width: 60%;
+	}
+	footer{
+		max-width: 768px;
 	}
 
 }
 
-@media screen and (max-width: 768px){
-
-
-}
-
+/*media settings for phones*/
 @media screen and (max-width: 640px){
 	header{
 		background-color: #4aaaa5;
@@ -205,9 +260,10 @@ button{
 	}
 
 	.content{
-		max-width: 640px;
+		max-width: 600px;
 		margin-bottom: 100px;
 		padding-bottom: 20px;
+		align-content: center;
 	}
 
 	#selfpic{
